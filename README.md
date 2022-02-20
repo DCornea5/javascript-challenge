@@ -53,7 +53,7 @@ Each level contains specific **html** files as well as static folder containing 
 ### App Images
 
 
-![UFO Sightings Filtered Data](UFO-level-2/static/images/App_YFO_Level-2.PNG){ width=50% }
+![UFO_Sightings_Filtered_Data](UFO-level-2/static/images/App_YFO_Level-2.PNG){ width=50% }
 
 
 - - -

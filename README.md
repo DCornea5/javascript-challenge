@@ -53,8 +53,8 @@ Each level contains specific **html** files as well as static folder containing 
 ### App Images
 
 
-![App_Img](UFO-level-2/static/images/App_UFO_Level-2.PNG){ width=50% }
-![App_Table_and_Filters](UFO-level-2/static/images/App_UFO_Level-2_a.PNG){ width=50% }
+![App_Img](UFO-level-2/static/images/App_UFO_Level-2.PNG)
+![App_Table_and_Filters](UFO-level-2/static/images/App_UFO_Level-2_a.PNG)
 
 
 - - -

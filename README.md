@@ -15,7 +15,7 @@ Allow our users to filter the table data for specific values.
 
 The repository for this project is called `javascript-challenge`. 
 
-Inside ythe repository, there are two directories for the Javascript folders **UFO-level-1** and **UFO-level-2**.
+Inside the repository, there are two directories for the Javascript folders **UFO-level-1** and **UFO-level-2**.
 
 Each level contains specific **html** files as well as static folder containing javascript. 
 
@@ -26,7 +26,7 @@ Each level contains specific **html** files as well as static folder containing 
 
 * Using the UFO dataset provided in the form of an array of JavaScript objects, write code that appends a table to the web page and then adds new rows of data for each UFO sighting.
 
-* The HTML table has teh following columns `date/time`, `city`, `state`, `country`, `shape`, and `comment` 
+* The HTML table has the following columns `date/time`, `city`, `state`, `country`, `shape`, and `comment` 
 
 * Use a date form in the HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 

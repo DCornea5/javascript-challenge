@@ -50,70 +50,70 @@ tableData.forEach((UFOsighting) => {
     // var inputValue = inputHTML.property("value");
     // console.log(inputValue); 
 
-    // var inputDate = d3.select("#date-input");
-    // var inputCity = d3.select("#city-input");
-    // var inputState = d3.select("#state-input");
-    // var inputCountry = d3.select("#country-input");
-    // var inputShape = d3.select("#shape-input");
+    var inputDate = d3.select("#date-input");
+    var inputCity = d3.select("#city-input");
+    var inputState = d3.select("#state-input");
+    var inputCountry = d3.select("#country-input");
+    var inputShape = d3.select("#shape-input");
     // var inputDuration = d3.select("#duration-input");
     // var inputComment = d3.select("#comment-input");
 
     
-    // var dateValue = inputDate.property("value");
-    // var cityValue = inputCity.property("value");
-    // var stateValue = inputState.property("value");
-    // var countryValue = inputCountry.property("value");
-    // var shapeValue = inputShape.property("value");
+    var dateValue = inputDate.property("value");
+    var cityValue = inputCity.property("value");
+    var stateValue = inputState.property("value");
+    var countryValue = inputCountry.property("value");
+    var shapeValue = inputShape.property("value");
     // var durationValue = inputDuration.property("value");
     // var commentValue = inputComment.property("value");
 
-    var inputElement = d3.select("#input");
-    var inputValue = inputElement.property("value");
-    var filteredData = tableData.filter(sighting => sighting.datetime === inputValue ||
-      sighting.city === inputValue ||
-      sighting.state === inputValue ||
-      sighting.country === inputValue ||
-      sighting.shape === inputValue);
-      filteredData.forEach(function(selections) {
-        var row = tbody.append("tr");
-        Object.entries(selections).forEach(function([key,value]){
-          var cell = row.append("td");
-          cell.text(value);
+//     var inputElement = d3.select("#input");
+//     var inputValue = inputElement.property("value");
+//     var filteredData = tableData.filter(sighting => sighting.datetime === inputValue ||
+//       sighting.city === inputValue ||
+//       sighting.state === inputValue ||
+//       sighting.country === inputValue ||
+//       sighting.shape === inputValue);
+//       filteredData.forEach(function(selections) {
+//         var row = tbody.append("tr");
+//         Object.entries(selections).forEach(function([key,value]){
+//           var cell = row.append("td");
+//           cell.text(value);
 
-      });
+//       });
 
 
-  });
-});
+//   });
+// });
 
 
 
     // //  filters array
-    // var filters = [{type: "datetime", name: dateValue},
-    //               {type: "city", name: cityValue},
-    //               {type: "state", name: stateValue},
-    //               {type: "country", name: countryValue},
-    //               {type: "shape", name: shapeValue}]
+    var filters = [{type: "datetime", name: dateValue},
+                  {type: "city", name: cityValue},
+                  {type: "state", name: stateValue},
+                  {type: "country", name: countryValue},
+                  {type: "shape", name: shapeValue}]
     
 
-    // var filteredSightings = tableData.filter(sighting => 
-    //   filters.every(filterTable =>{
-    //   if (filterTable.name === "") return true
-    //   return sighting[filterTable.type] === filterTable.name
-    //   }));
+    var filteredSightings = tableData.filter(sighting => 
+      filters.every(filterTable =>{
+      if (filterTable.name === "") return true
+      return sighting[filterTable.type] === filterTable.name
+      }));
       
       
     // // console.log(filteredSightings)
-    // filteredSightings.forEach(function(selectedSighting){
+    filteredSightings.forEach(function(selectedSighting){
     //     // console.log(selectedSighting);
-    //     var row = tbody.append("tr");
-    //     Object.entries(selectedSighting).forEach(function([key, value]){
+        var row = tbody.append("tr");
+        Object.entries(selectedSighting).forEach(function([key, value]){
     //         // console.log(key, value);
-    //         var cell = row.append("td");
-    //         cell.text(value);
-    //     });
+            var cell = row.append("td");
+            cell.text(value);
+        });
 
-    // });
+    });
     
-    // });
+    });
           

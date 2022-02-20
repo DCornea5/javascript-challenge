@@ -35,7 +35,9 @@
                 <form>
 
 
-                    <div class="input-group">
+                    
+                    <!-- create a dropdown list for available column names -->
+                    <!-- <div class="input-group">
                       <div class="input-group-prepend">
                             <select type="button" class="form-control btn btn-info" data-toggle="dropdown">
                                 <option href="#" class="dropdown-item">Date</option>
@@ -47,7 +49,41 @@
                       </div>
                             <input type="text" id="input" class="form-control" placeholder="enter search value">
                   </div>
-                </form>
+                </form> -->
+
+
+                <!--  create multiple input tags for available column names -->
+                <div class="form-group">
+                  <ul class="list-group" id="filters">
+
+                    <li class="filter list-group-item">
+                      <label for="date">Enter a Date</label>
+                      <p>m/d/yyyy</p>
+                      <input class="form-control" id="date-input" type="text" placeholder="1/11/2011">
+                    </li>
+
+                    <li class="filter list-group-item">
+                      <label for="city">Enter a City</label>
+                      <input class="form-control" id="city-input" type="text" placeholder="benton">
+                    </li>
+
+                    <li class="filter list-group-item">
+                      <label for="state">Enter a State</label>
+                      <input class="form-control" id="state-input" type="text" placeholder="ar">
+                    </li>
+
+                    <li class="filter list-group-item">
+                      <label for="country">Enter a Country</label>
+                      <input class="form-control" id="country-input" type="text" placeholder="us">
+                    </li>
+
+                    <li class="filter list-group-item">
+                      <label for="shape">Enter a Shape</label>
+                      <input class="form-control" id="shape-input" type="text" placeholder="circle">
+                    </li>
+
+                  </ul>
+                </div>
 
 
 
@@ -59,7 +95,7 @@
         </div>
         <div class="col-md-10">
           <div id="table-area" class="">
-            <table id="ufo-table" class="table table-striped">
+            <table id="ufo-table" class="table table-hover table-striped">
               <thead>
                 <tr>
                   <th class="table-head">Date</th>

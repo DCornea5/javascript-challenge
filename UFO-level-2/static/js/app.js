@@ -116,4 +116,54 @@ tableData.forEach((UFOsighting) => {
     });
     
     });
-          
+
+
+
+
+
+
+    // reset table to include all values when pressing reset button
+
+  
+
+    var resetbutton = d3.select("#reset-btn");
+    resetbutton.on("click", function(){
+
+      tbody.html("");
+  
+      
+      
+    var resetdateValue = ("");
+    var resetcityValue = ("");
+    var resetstateValue = ("");
+    var resetcountryValue = ("");
+    var resetshapeValue = ("");
+    
+    var resetfilters = 
+    [{type: "datetime", name: resetdateValue},
+    {type: "city", name: resetcityValue},
+    {type: "state", name: resetstateValue},
+    {type: "country", name: resetcountryValue},
+    {type: "shape", name: resetshapeValue  }]
+
+
+    var filteredSightings = tableData.filter(sighting => 
+      resetfilters.every(filterTable =>{
+      if (filterTable.name === "") return true
+      return sighting[filterTable.type] === filterTable.name
+      }));
+      
+      
+    // // console.log(filteredSightings)
+    filteredSightings.forEach(function(selectedSighting){
+    //     // console.log(selectedSighting);
+        var row = tbody.append("tr");
+        Object.entries(selectedSighting).forEach(function([key, value]){
+    //         // console.log(key, value);
+            var cell = row.append("td");
+            cell.text(value);
+        });
+
+    });
+    
+    });

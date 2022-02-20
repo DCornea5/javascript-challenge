@@ -119,9 +119,6 @@ tableData.forEach((UFOsighting) => {
 
 
 
-
-
-
     // reset table to include all values when pressing reset button
 
   

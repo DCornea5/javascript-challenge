@@ -50,9 +50,10 @@ Each level contains specific **html** files as well as static folder containing 
 
 * [UFO Sightings Data](UFO-level-2/static/js/data.js)
 
+### App Images
+
+
+![UFO Sightings Filtered Data](UFO-level-2/static/images/App_YFO_Level-2.PNG){ width=50% }
+
 
 - - -
-
-### Copyright
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
